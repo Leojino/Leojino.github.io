@@ -14,6 +14,10 @@ function Main()  {
         await fadeOutLoader()
     }
 
+    // function StartPageLoader(){
+
+    // }
+
     function fadeOutLoader() {
         return new Promise( (resolve, reject) => {
             const onLoaderFadeOutDone = () => {
