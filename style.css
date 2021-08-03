@@ -1,17 +1,18 @@
+:root {
+  --primary: orange;
+}
+
+
 body {
-  margin: 0;
   /* font-family: 'Playfair Display', serif; */
   font-family: "Aleo", serif;
-  font-weight: 100;
+  /* font-weight: 100; */
   padding-top: 100vh;
+  /* background-color: var(--primary); */
 }
 body.loading {
   overflow: hidden;
 }
-* {
-  box-sizing: border-box;
-}
-
 /* Page Loader start */
 /* .loading .loader {
     display: block;
@@ -128,6 +129,7 @@ header {
   color: #C3073F;
   transition: height .5s;
   will-change: height;
+  z-index: 100;
 }
 header.full {
   height: 100vh;
@@ -149,18 +151,6 @@ header h1 a {
   right: 0;
   bottom: 0;
 
-}
-main  section{
-  min-height: 100vh;
-}
-section {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-section h1 {
-    font-size: 2rem;
 }
 
 .brand-name {
@@ -185,4 +175,11 @@ section h1 {
 .showcase.show{
   opacity: 1;
   visibility: visible;
+}
+
+.card-cover {
+  background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    border-radius: 10px;
 }

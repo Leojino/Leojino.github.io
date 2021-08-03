@@ -30,8 +30,6 @@ function throttle(fn, wait) {
 
 function onDocumentScroll(e) {
   const height = window.innerHeight - window.scrollY;
-  console.clear()
-  console.log(this.header.clientHeight, window.innerHeight);
   if( this.header.innerHeight === height ) {
     return
   };
