@@ -1,4 +1,3 @@
-// import { BounceAppearTextAnimate } from './animations.js'
 import Showcase from "./showcase.js";
 
 function Main() {
@@ -45,17 +44,6 @@ function throttle(fn, wait) {
     }
   }
 }
-
-function onDocumentScroll(e) {
-  const height = window.innerHeight - window.scrollY;
-  // console.clear()
-  // console.log(this.header.clientHeight, window.innerHeight);
-  if( this.header.innerHeight === height ) {
-    return
-  };
-  this.header.style.height = `${height > 60 ? height : 60}px`;
-}
-
 
 window.addEventListener("load", Main);
 
