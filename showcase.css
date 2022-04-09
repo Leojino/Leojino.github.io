@@ -30,7 +30,7 @@
 }
 
 .showcase .gallery.zoom-out {
-    animation: scale 10000ms ease-in-out forwards;
+    animation: scale 20000ms ease-in-out forwards;
     animation-delay: 2s;
 }
 
