@@ -1,4 +1,4 @@
-import Showcase from "./showcase.js";
+import Showcase from "./showcase.js?v=add";
 
 function Main() {
   // Set Up Page;

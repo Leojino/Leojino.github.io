@@ -1,4 +1,4 @@
-@import "showcase.css";
+@import "showcase.css?v=add";
 
 body {
   margin: 0;
@@ -145,6 +145,16 @@ header .logo-name {
 header.transparent .logo-name{
   display: none;
 }
+.live-word {
+  cursor: pointer;
+  display: inline-block;
+  transition: transform .1s;
+}
+.live-word:hover {
+  transform: scale(1.01);
+  color: #0b252e;
+}
+
 header h1 {
   font-size: 20px;
   /* padding: 10px; */
