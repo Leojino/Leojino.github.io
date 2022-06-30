@@ -7,107 +7,415 @@
     <title>Jino John - Personal Space</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <!-- <link href="https://fonts.googleapis.com/css2?family=Aleo:wght@300;400;700&display=swap" rel="stylesheet"> -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="animation.css">
+    <!-- <link rel="stylesheet" href="animation.css"> -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
 </head>
+
 <body class="loading bg-dark">
-    <header id="header" class="fixed-top">
+    <header id="header" class="fixed-top transparent opacity-0">
         <div class="navbar navbar-expand navbar-dark">
             <div class="container">
-                <a href="#" class="navbar-brand">👨🏻‍💻 <span class="logo-name">JinoJohn</span></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <a href="#" class="navbar-brand theme-font">👨🏻‍💻 <span class="logo-name">Jino John</span></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <ul class="navbar-nav ms-auto d-none d-sm-flex">
-                    <!-- <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="#about">About</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="#skills">Skills</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="#experience">Experiences</a>
                     </li>
                 </ul>
                 <div class="ms-auto d-flex d-sm-none">
-                    <div class="" type="div" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                        <svg style="color: #ccc;" viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1">
-                            <line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+                    <div class="" type="div" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                        <svg style="color: #ccc;" viewBox="0 0 24 24" width="24" height="24" stroke="currentColor"
+                            stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"
+                            class="css-i6dzq1">
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
                         </svg>
                     </div>
-                    <div class="dropdown-menu dropdown-menu-end dropdown-menu-dark shadow me-2 mt-2" aria-labelledby="dropdownMenuButton1">
-                      <li><a class="dropdown-item" href="#about">About</a></li>
-                      <li><a class="dropdown-item" href="#skills">Skills</a></li>
-                      <li><a class="dropdown-item" href="#experience">Experiences</a></li>
-                    </ul>
+                    <div class="dropdown-menu dropdown-menu-end dropdown-menu-dark shadow me-2 mt-2"
+                        aria-labelledby="dropdownMenuButton">
+                        <li><a class="dropdown-item" href="#about">About</a></li>
+                        <li><a class="dropdown-item" href="#experience">Experiences</a></li>
+                        <!-- <li><a class="dropdown-item" href="#skills">Skills</a></li> -->
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
     </header>
     <main>
         <section class="hero" id="hero">
             <div class="showcase"></div>
             <div class="container">
-                <div class="content">
-                    <h1 class="display-1 fw-bolder"><span class="live-word">Jino</span> <span class="live-word">John</span></h1>
-                    <p class="lead"><span class="live-word">Front-end</span> <span class="live-word">Developer</span></p>
-                    <a href="#about" class="btn btn-danger">Know More</a>
+                <div class="content text-center">
+                    <h2 class="fw-lighter animate__animated animate__fadeIn animate__delay-1s">Hello, I'm</h2>
+                    <div class="">
+                        <h1 id="hero-title" class="display-1 fw-bolder theme-font animate__delay-2s opacity-0">Jino John
+                        </h1>
+                    </div>
+                    <p class="fs-4 animate__animated animate__fadeIn animate__delay-3s">Web developer.</p>
+                    <!-- <a href="#about" class="btn btn-danger">Know More</a> -->
                 </div>
             </div>
+            <div class="position-absolute animate__animated animate__bounce animate__delay-3s"
+                style="left:50%;bottom:20px;">
+                <svg width="16" height="16" fill="currentColor" class="bi bi-caret-down" viewBox="0 0 16 16">
+                    <path
+                        d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z" />
+                </svg>
+            </div>
         </section>
-        <section class="about text-end" id="about">
+        <section class="about" id="about">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4"></div>
-                    <div class="col-md-8">
-                        <h2 class="display-5">About me.</h2>
-                        <div class="lead">
-                            A little more information coming soon
+                    <div class="col">
+                        <h2 class="display-6 theme-font">About me.</h2>
+                        <div>
+                            <p class="fs-4">Hello there, welcome to my page.</p>
+                            <p class="fs-4">I am a Web developer based out of Toronto. I have been writing code professionally since 2014.</p>
+                            <p class="fs-4">My speciality is front-end development. Having worked on building interactive applications, responsive websites, and enterprise-grade dashboard applications using modern development practices, frameworks and libraries.</p>
+                            <p class="fs-4">Drop me a line at leojino@gmail.com.</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="skills" id="skills">
+        <section class="experience" id="experience">
+            <div class="container">
+                <div class="row">
+                    <!-- <div class="col-md-4"></div> -->
+                    <div class="col-md-8">
+                        <h2 class="display-6 theme-font">Work Experiences.</h2>
+                        <div class="fs-4">
+                            Companies I have worked for in the past.
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-12 col-md-4">
+                        <div class="work-card">
+                            <h1 class="theme-font">1.</h1>
+                            <h4 class="work-card-title theme-font">
+                                <div class="company-name">Media.net,</div>Module lead
+                            </h4>
+                            <p>Leading UI and Frontend development.</p>
+                            <div class="visually-hidden modal-data">
+                                <div class="theme-font">
+                                    <h5 class="company-name">Media.net</h5>
+                                    <h3> Frontend Module Lead</h3>
+                                </div>
+                                <div class="d-flex text-muted justify-content-between">
+                                    <span>Mumbai, India</span>
+                                    <span>December 2019 - October 2021</span>
+                                </div>
+                                <div class="d-flex mt-3">
+                                    <div class="mx-2">Skills</div>
+                                    <div class="">
+                                        <div>
+                                            <span class="badge rounded-pill bg-primary">Task Management</span>
+                                            <span class="badge rounded-pill bg-primary">UI/UX Enhancement</span>
+                                            <span class="badge rounded-pill bg-primary">Performance/Code
+                                                Optimization</span>
+                                            <span class="badge rounded-pill bg-primary">Code Review</span>
+                                            <span class="badge rounded-pill bg-primary">React.js</span>
+                                            <span class="badge rounded-pill bg-primary">Vue.js</span>
+                                            <span class="badge rounded-pill bg-primary">HTML/CSS</span>
+                                            <span class="badge rounded-pill bg-primary">Express.js</span>
+                                            <span class="badge rounded-pill bg-primary">GIT</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <div>Tasks/Responsibilties</div>
+                                    <ul>
+                                        <li>Managing a large scale vue.js re-engineering project to optimize application
+                                            perfromance and update the user interface;
+                                            Improved service layer implementation, upgraded user access control to
+                                            component level for fasterloading and easy scaling. Restructured application
+                                            to optimise performance and reduce build size by 20%.</li>
+                                        <li>Responsible for rebuilding the existing interface for a website config
+                                            editor built on React.js; Createdcomposite pages and components for easy
+                                            scaling; Updated outdated implementations.</li>
+                                        <li>Created a website builder application to generate a customisable static
+                                            website using react and express.js</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="work-card">
+                            <h1 class="theme-font">2.</h1>
+                            <h4 class="work-card-title theme-font">
+                                <div class="company-name">Freestone Infotech,</div>Software
+                                developer
+                            </h4>
+                            <p>Developing enterprise grade frontend applications.</p>
+                            <div class="visually-hidden modal-data">
+                                <div class="theme-font">
+                                    <h5 class="company-name">Freestone Infotech</h5>
+                                    <h3>Senior Software developer</h3>
+                                </div>
+                                <div class="d-flex text-muted justify-content-between">
+                                    <span>Mumbai, India</span>
+                                    <span>September 2018 - December 2019</span>
+                                </div>
+                                <div class="d-flex mt-3">
+                                    <div class="mx-2">Skills</div>
+                                    <div class="">
+                                        <div>
+                                            <span class="badge rounded-pill bg-primary">React.js</span>
+                                            <span class="badge rounded-pill bg-primary">HTML/CSS</span>
+                                            <span class="badge rounded-pill bg-primary">Express.js</span>
+                                            <span class="badge rounded-pill bg-primary">GIT</span>
+                                            <span class="badge rounded-pill bg-primary">UI/UX</span>
+                                            <span class="badge rounded-pill bg-primary">Performance/Code
+                                                Optimization</span>
+                                            <span class="badge rounded-pill bg-primary">Code Review</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <div>Tasks/Responsibilties</div>
+                                    <ul>
+                                        <li>Authentic Assessment - Migrated legacy backbone.js application into React;
+                                            Optimizing applicationstructure to accommodate new and existing feature
+                                            implementation; Collaborate with the team toimprove the overall workflow.
+                                            Improved App load speed by 5 seconds.</li>
+                                        <li>Privacera - Developed front-end interfaces using React.js for centralised
+                                            access control engines anddata sharing infrastructure; Integrated Apache
+                                            Ranger platform into the main Privacera portal.</li>
+                                        <li>Streaming Analytics Manager - Created new pages and components; Resolved
+                                            pending issues.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="work-card">
+                            <h1 class="theme-font">3.</h1>
+                            <h4 class="work-card-title theme-font">
+                                <div class="company-name">Frapp India,</div>Web
+                                developer
+                            </h4>
+                            <p>Handled the entire web presence.</p>
+                            <div class="visually-hidden modal-data">
+                                <div class="theme-font">
+                                    <h5 class="company-name">Freestone Infotech</h5>
+                                    <h3>Full Stack web developer</h3>
+                                </div>
+                                <div class="d-flex text-muted justify-content-between">
+                                    <span>Mumbai, India</span>
+                                    <span>July 2016 - October 2017</span>
+                                </div>
+                                <div class="d-flex mt-3">
+                                    <div class="mx-2">Skills</div>
+                                    <div class="">
+                                        <div>
+                                            <span class="badge rounded-pill bg-primary">Javascript</span>
+                                            <span class="badge rounded-pill bg-primary">Jquery</span>
+                                            <span class="badge rounded-pill bg-primary">HTML/CSS</span>
+                                            <span class="badge rounded-pill bg-primary">PHP</span>
+                                            <span class="badge rounded-pill bg-primary">Express.js</span>
+                                            <span class="badge rounded-pill bg-primary">Sails.js</span>
+                                            <span class="badge rounded-pill bg-primary">GIT</span>
+                                            <span class="badge rounded-pill bg-primary">UI/UX</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <div>Tasks/Responsibilties</div>
+                                    <ul>
+                                        <li>Built the entire web presence for the main student-facing website. Designed
+                                            and developed the Partnerdashboard. Developed unique user experiences that
+                                            drove interaction.</li>
+                                        <li>Designed and developed an Interactive Trivia game for Student onboarding,
+                                            set up at college festivalsand events; Developed the Frapp Doodle game.</li>
+                                        <li>Built a student resume generation application that is used across all Frapp
+                                            application platforms ( Web,Android, iOS ) handling 1000+ call everyday.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="work-card">
+                            <h1 class="theme-font">4.</h1>
+                            <h4 class="work-card-title theme-font">
+                                <div class="company-name">RealtyRedefined,</div>Web Developer
+                            </h4>
+                            <p>Developed Data-driven full-stack websites</p>
+                            <div class="visually-hidden modal-data">
+                                <div class="theme-font">
+                                    <h5 class="company-name">RealtyRedefined</h5>
+                                    <h3>Full Stack Web Developer</h3>
+                                </div>
+                                <div class="d-flex text-muted justify-content-between">
+                                    <span>Mumbai, India</span>
+                                    <span>June 2015 - June 2016</span>
+                                </div>
+                                <div class="d-flex mt-3">
+                                    <div class="mx-2">Skills</div>
+                                    <div class="">
+                                        <div>
+                                            <span class="badge rounded-pill bg-primary">Javascript</span>
+                                            <span class="badge rounded-pill bg-primary">Jquery</span>
+                                            <span class="badge rounded-pill bg-primary">HTML/CSS</span>
+                                            <span class="badge rounded-pill bg-primary">PHP</span>
+                                            <span class="badge rounded-pill bg-primary">Angular.js</span>
+                                            <span class="badge rounded-pill bg-primary">UI/UX</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <div>Tasks/Responsibilties</div>
+                                    <ul>
+                                        <li>Developing responsive data-driven full-stack websites using PHP and MySQL.
+                                        </li>
+                                        <li>Developed a real-estate website on Symfony.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="work-card">
+                            <h1 class="theme-font">5.</h1>
+                            <h4 class="work-card-title theme-font">
+                                <div class="company-name">MITR Media,</div>Software
+                                developer
+                            </h4>
+                            <p>Developing Educational E-learning Applications.</p>
+                            <div class="visually-hidden modal-data">
+                                <div class="theme-font">
+                                    <h5 class="company-name">MITR Media</h5>
+                                    <h3>Web Application Developer</h3>
+                                </div>
+                                <div class="d-flex text-muted justify-content-between">
+                                    <span>Mumbai, India</span>
+                                    <span>September 2014 - June 2015</span>
+                                </div>
+                                <div class="d-flex mt-3">
+                                    <div class="mx-2">Skills</div>
+                                    <div class="">
+                                        <div>
+                                            <span class="badge rounded-pill bg-primary">Javascript</span>
+                                            <span class="badge rounded-pill bg-primary">Jquery</span>
+                                            <span class="badge rounded-pill bg-primary">HTML5/CSS</span>
+                                            <span class="badge rounded-pill bg-primary">Canvas API</span>
+                                            <span class="badge rounded-pill bg-primary">Animations</span>
+                                            <span class="badge rounded-pill bg-primary">UI/UX</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <div>Tasks/Responsibilties</div>
+                                    <ul>
+                                        <li>Developing E-learning web Gizmos for Explore Learning.</li>
+                                        <li>Building applications on the custom in-house framework. Worked extensively
+                                            with HTML5 Canvas,and Audio API to build complex interactivities and
+                                            animations.</li>
+                                        <li>Conducting peer code and application testing.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="work-card">
+                            <h1 class="theme-font">6.</h1>
+                            <h4 class="work-card-title theme-font">
+                                <div class="company-name">Zeus Learning,</div>Junior Softwate Developer
+                            </h4>
+                            <p>Developing E-learning Interactivity</p>
+                            <div class="visually-hidden modal-data">
+                                <div class="theme-font">
+                                    <h5 class="company-name">Zeus Learning</h5>
+                                    <h3>Junior Softwate Developer</h3>
+                                </div>
+                                <div class="d-flex text-muted justify-content-between">
+                                    <span>Mumbai, India</span>
+                                    <span>January 2014 - June 2014</span>
+                                </div>
+                                <div class="d-flex mt-3">
+                                    <div class="mx-2">Skills</div>
+                                    <div class="">
+                                        <div>
+                                            <span class="badge rounded-pill bg-primary">Javascript</span>
+                                            <span class="badge rounded-pill bg-primary">Backbone.js</span>
+                                            <span class="badge rounded-pill bg-primary">Jquery</span>
+                                            <span class="badge rounded-pill bg-primary">HTML5/CSS</span>
+                                            <span class="badge rounded-pill bg-primary">Canvas API</span>
+                                            <span class="badge rounded-pill bg-primary">Animations</span>
+                                            <span class="badge rounded-pill bg-primary">UI/UX</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mt-3">
+                                    <div>Tasks/Responsibilties</div>
+                                    <ul>
+                                        <li>Developing Interactive E-learning frontend applications for Discovery
+                                            Education.</li>
+                                        <li>Responsible for writing modern javascript, HTML5 and CSS3 to create
+                                            cross-browser and cross-device performant web applications.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="experienceModal" tabindex="-1" aria-labelledby="experienceModal"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content bg-dark p-1 border-0">
+                            <div class="modal-body"></div>
+                            <div class="modal-footer border-0">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="skills" id="skills">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8">
-                        <h2 class="display-5">Web Dev Skills</h2>
-                        <div class="lead">
+                        <h2 class="display-5 theme-font">Web Dev Skills</h2>
+                        <div class="">
                             All about Javascript, HTML, CSS.
                         </div>
                     </div>
                     <div class="col-md-4"></div>
                 </div>
             </div>
-        </section>
-        <section class="experience text-end" id="experience">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4"></div>
-                    <div class="col-md-8">
-                        <h2 class="display-5">Work Experiences</h2>
-                        <div class="lead">
-                            As a Senior Frontend Lead, Frontend developer, Web developer.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </section> -->
     </main>
-    <div class="footer position-relative mb-5">
-        <div class="container text-center">
-            <hr>
+    <footer class="footer position-relative pb-5">
+        <div class="container">
             LinkedIn - GitHub - Facebook - @mail
         </div>
-    </div>
+    </footer>
     <template id="page-loader-content">
         <div class="wrapper">
             <h1 class="bounce-appear" id="loader-brand">
@@ -124,25 +432,10 @@
         </div>
     </template>
     <!-- <div class="body-loader"></div> -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
     <script type="module" src="main.js"></script>
 </body>
 
 </html>
-
-<!-- 
-<template id="page-loader-content">
-    <div class="wrapper">
-        <h1 class="bounce-appear" id="loader-brand">
-            <span>J</span>
-            <span>i</span>
-            <span>n</span>
-            <span>o</span>
-            <span>&nbsp;</span>
-            <span>J</span>
-            <span>o</span>
-            <span>h</span>
-            <span>n</span>
-        </h1>
-    </div>
-</template> -->

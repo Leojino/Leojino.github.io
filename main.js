@@ -4,35 +4,66 @@ function Main() {
   // Set Up Page;
   document.body.classList.remove("loading");
 
-  this.header = document.getElementById("header");
-  this.showcase = new Showcase(document.querySelector(".showcase"));
+  const header = document.getElementById("header");
+  const heroTitle = document.getElementById("hero-title");
+  const showcase = new Showcase(document.querySelector(".showcase"));
+  const workCards = document.querySelectorAll(".work-card");
+  const experienceModal = document.getElementById('experienceModal');
+  const experienceBootstrapModal = new bootstrap.Modal(experienceModal, {});
 
-  // initEvents.call(this);
-  setupHeader(this.header)
-}
+  // console.log(experienceBootstrapModal);
 
-function setupHeader(el) {
-  let options = {
-    // root: document.querySelector('body')[0],
-    // rootMargin: '0px',
-    threshold: .8
+  startHeroAnimations();
+  initEvents();
+  setupIntersectionBehaviour(header);
+
+  function startHeroAnimations() {
+    heroTitle.classList.add("animate__animated","animate__flipInX")
+    heroTitle.classList.remove("opacity-0")
+    
+    header.classList.add("animate__animated", "animate__fadeIn")
+    header.classList.remove("opacity-0")
+    
+    setTimeout(function() {
+      showcase.start();
+    },1000)
   }
-  
-  let observer = new IntersectionObserver(function(entries, observer){
-    entries.forEach(entry => {
-      if(entry.isIntersecting){
-        el.classList.add("transparent")
-      }else{
-        el.classList.remove("transparent")
-      }
-    })
-  }, options);
-  let target = document.querySelector('.hero');
-  observer.observe(target);
-}
 
-function initEvents() {
-  // document.addEventListener("scroll", onDocumentScroll.bind(this));
+  function initEvents() {
+    // document.addEventListener("scroll", onDocumentScroll.bind(this));
+    for(let i=0; i<workCards.length; i++) {
+      workCards[i].addEventListener("click", onWorkCardClick, true);
+    }
+  }
+
+  function setupIntersectionBehaviour(el) {
+    let options = {
+      // root: document.querySelector('body')[0],
+      // rootMargin: '0px',
+      threshold: .8
+    }
+    
+    let observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        console.log(entry.target.id, entry.isIntersecting)
+        if(entry.isIntersecting){
+          el.classList.add("transparent");
+        }else{
+          el.classList.remove("transparent")
+        }
+      })
+    }, options);
+    let target = document.querySelector('.hero');
+    observer.observe(target);
+    // observer.observe(document.querySelector('.about'));
+  }
+
+  function onWorkCardClick(e) {
+    experienceModal.querySelector(".modal-body").innerHTML = e.currentTarget.querySelector(".modal-data").innerHTML
+
+    experienceBootstrapModal.show();
+  }
+
 }
 
 function throttle(fn, wait) {
