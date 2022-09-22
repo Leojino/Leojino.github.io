@@ -1,8 +1,9 @@
 const ImageStore = [
-    {url: './assets/poster.jpg', anim: "zoom-out"},
-    {url: './assets/IMG_7347.jpeg', anim: "zoom-out"},
-    {url: './assets/IMG_6776.jpg', anim: "pan-right"},
-    {url: './assets/IMG_6835.jpg', anim: "pan-right"},
+    {url: './assets/posters/IMG_8124.JPG', anim: "zoom-out"},
+    {url: './assets/posters/IMG_8126.JPG', anim: "zomm-out"},
+    {url: './assets/posters/IMG_8398.JPG', anim: "zoom-out"},
+    {url: './assets/posters/IMG_8430.JPG', anim: "zomm-out"},
+    {url: './assets/posters/IMG_8582.JPG', anim: "zomm-out"},
 ]
 
 export default function Showcase(wrapper) {
