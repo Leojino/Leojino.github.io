@@ -1,8 +1,8 @@
 const ImageStore = [
-    {url: './assets/posters/IMG_8124.JPG', anim: "zoom-out"},
+    // {url: './assets/posters/IMG_8124.JPG', anim: "zoom-out"},
     {url: './assets/posters/IMG_8126.JPG', anim: "zoom-out"},
     {url: './assets/posters/IMG_8398.JPG', anim: "zoom-out"},
-    {url: './assets/posters/IMG_8430.JPG', anim: "zoom-out"},
+    {url: './assets/posters/IMG_8430.jpg', anim: "zoom-out"},
     {url: './assets/posters/IMG_8582.JPG', anim: "zoom-out"},
 ]
 
